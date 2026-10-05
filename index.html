@@ -81,6 +81,7 @@
     <li><strong>Konum:</strong> hassas konum (enlem, boylam), irtifa, GPS hızı ve doğruluğu. Mesafe, rota ve irtifa yalnızca konumdan hesaplanabildiği için <code>ACCESS_FINE_LOCATION</code> izni istenir.</li>
     <li><strong>Arka planda konum:</strong> izin verirseniz (<code>ACCESS_BACKGROUND_LOCATION</code>) Trips, araç açıldığında siz uygulamayı açmadan da yolculuğu kaydeder; konum <strong>uygulama kapalıyken veya kullanılmıyorken de</strong> toplanır. Bu izin istenmeden önce uygulama içinde ayrıca açıklanır. İzin isteğe bağlıdır; verilmezse kayıt yalnızca uygulama açıkken yapılır.</li>
     <li><strong>Araç verileri:</strong> hız, anlık güç ve enerji tüketimi, batarya seviyesi ve kapasitesi, kalan menzil, vites, kontak ve park freni durumu, dış sıcaklık, tekerlek dönüş sayacı. Bunlar aracın kendi sisteminden okunur.</li>
+    <li><strong>Araç bilgisi ve araç kimliği:</strong> marka, model, model yılı, batarya kapasitesi ve multimedya ünitesinin modeli; ayrıca aynı Google hesabını birden fazla araçta kullandığınızda yolculukları birbirinden ayırmak için, cihazın Android kimliğinden <strong>tek yönlü</strong> türetilen ve yalnızca Trips'e özgü bir araç kimliği. Ham cihaz kimliği aracınızdan çıkmaz. Bu bilgiler yolculuklarla birlikte yalnızca sizin Drive'ınıza gider.</li>
     <li><strong>Google hesabı (isteğe bağlı):</strong> hesabı bağlarsanız e-posta adresiniz (hangi hesabın bağlı olduğunu göstermek için) ve Google'ın verdiği erişim anahtarları.</li>
     <li><strong>Teşhis günlüğü:</strong> uygulamanın kendi çalışma durumunu (yolculuğun başlayıp bittiği, yüklemenin başarılı olup olmadığı gibi) kaydeden küçük bir dosya. <strong>Konum içermez</strong>, araçta kalır ve hiçbir yere gönderilmez.</li>
   </ul>
@@ -89,7 +90,7 @@
   <h2>Telefon/tablet uygulamasının kullandığı veriler</h2>
   <ul>
     <li><strong>Google hesabı:</strong> giriş yaptığınız hesabın e-posta adresi ve Google'ın verdiği erişim izni. Erişim anahtarını Google Play hizmetleri saklar; uygulama diske anahtar yazmaz.</li>
-    <li><strong>Yolculuklar:</strong> araç uygulamasının Drive'ınıza yüklediği yolculuk özetleri ve GPS izleri, görüntülemek için telefona indirilir ve uygulamanın özel depolamasında tutulur. Yer adları gibi sizin eklediğiniz notlar da yalnızca telefonda saklanır.</li>
+    <li><strong>Yolculuklar:</strong> araç uygulamasının Drive'ınıza yüklediği yolculuk özetleri ve GPS izleri, görüntülemek için telefona indirilir ve uygulamanın özel depolamasında tutulur. Yer adları ve araçlara verdiğiniz adlar gibi sizin eklediğiniz notlar da yalnızca telefonda saklanır.</li>
     <li><strong>Harita:</strong> harita karoları <a href="https://www.openstreetmap.org">OpenStreetMap</a> sunucularından indirilir. Bu isteklerde cihazınızın IP adresi ve görüntülenen harita bölgesi OpenStreetMap'e ulaşır; yolculuk verisi gönderilmez. Bkz. <a href="https://osmfoundation.org/wiki/Privacy_Policy">OSMF gizlilik politikası</a>.</li>
     <li>Telefon uygulaması Drive'a <strong>hiçbir şey yazmaz</strong>, yalnızca okur. Uygulama verileri Android yedeklemesinin dışında tutulur.</li>
   </ul>
@@ -158,7 +159,7 @@
   <p>Bu politika güncellenirse bu sayfa yeni bir "son güncelleme" tarihiyle yenilenir.</p>
 
   <h2>İletişim</h2>
-  <p>Oğuzhan Yücel · <a href="mailto:oguzhanyucel44@gmail.com">oguzhanyucel44@gmail.com</a></p>
+  <p>Oğuzhan Yücel · <a href="mailto:developer.oguzhanyucel@gmail.com">developer.oguzhanyucel@gmail.com</a></p>
 
   <section class="en" id="en" lang="en">
     <h1>Trips — Privacy Policy</h1>
@@ -179,6 +180,7 @@
       <li><strong>Location:</strong> precise location (latitude, longitude), altitude, GPS speed and accuracy. Distance, route and elevation can only be calculated from location, so the <code>ACCESS_FINE_LOCATION</code> permission is requested.</li>
       <li><strong>Background location:</strong> if you allow it (<code>ACCESS_BACKGROUND_LOCATION</code>), Trips records trips when the car starts, without you opening the app; location is collected <strong>even when the app is closed or not in use</strong>. This is explained in the app before the permission is requested. The permission is optional; without it, trips are recorded only while the app is open.</li>
       <li><strong>Vehicle data:</strong> speed, instantaneous power and energy use, battery level and capacity, remaining range, gear, ignition and parking brake state, outside temperature, wheel tick counter — read from the vehicle's own systems.</li>
+      <li><strong>Vehicle details and vehicle ID:</strong> make, model, model year, battery capacity and the infotainment unit's model; plus, to keep trips apart when you use the same Google account in more than one car, a Trips-specific vehicle ID derived <strong>one-way</strong> from the device's Android ID. The raw device ID never leaves your car. This information goes, together with your trips, only to your own Drive.</li>
       <li><strong>Google account (optional):</strong> if you connect one, your email address (to show which account is connected) and the access tokens issued by Google.</li>
       <li><strong>Diagnostic log:</strong> a small file recording the app's own state (for example when a trip started or ended, whether an upload succeeded). It <strong>contains no location</strong>, stays in the car and is never sent anywhere.</li>
     </ul>
@@ -187,7 +189,7 @@
     <h2>Data used by the phone/tablet app</h2>
     <ul>
       <li><strong>Google account:</strong> the email address of the account you sign in with and the access granted by Google. The access token is kept by Google Play services; the app writes no token to disk.</li>
-      <li><strong>Trips:</strong> trip summaries and GPS tracks that the car app uploaded to your Drive are downloaded to the phone for display and kept in the app's private storage. Notes you add, such as place names, are stored only on the phone.</li>
+      <li><strong>Trips:</strong> trip summaries and GPS tracks that the car app uploaded to your Drive are downloaded to the phone for display and kept in the app's private storage. Notes you add, such as place names and names you give your cars, are stored only on the phone.</li>
       <li><strong>Maps:</strong> map tiles are downloaded from <a href="https://www.openstreetmap.org">OpenStreetMap</a> servers. These requests reveal your device's IP address and the map area being viewed to OpenStreetMap; no trip data is sent. See the <a href="https://osmfoundation.org/wiki/Privacy_Policy">OSMF privacy policy</a>.</li>
       <li>The phone app <strong>never writes</strong> to Drive; it only reads. App data is excluded from Android backup.</li>
     </ul>
@@ -256,11 +258,11 @@
     <p>If this policy is updated, this page will be revised with a new "last updated" date.</p>
 
     <h2>Contact</h2>
-    <p>Oğuzhan Yücel · <a href="mailto:oguzhanyucel44@gmail.com">oguzhanyucel44@gmail.com</a></p>
+    <p>Oğuzhan Yücel · <a href="mailto:developer.oguzhanyucel@gmail.com">developer.oguzhanyucel@gmail.com</a></p>
   </section>
 
   <footer>
-    Trips · Oğuzhan Yücel · <a href="mailto:oguzhanyucel44@gmail.com">oguzhanyucel44@gmail.com</a> · <a href="terms.html">Kullanım koşulları / Terms of use</a>
+    Trips · Oğuzhan Yücel · <a href="mailto:developer.oguzhanyucel@gmail.com">developer.oguzhanyucel@gmail.com</a> · <a href="terms.html">Kullanım koşulları / Terms of use</a>
   </footer>
 
 </main>
